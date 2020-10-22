@@ -1,0 +1,24 @@
+{
+    "name": "skywire/symfony-docker",
+    "description": "A simple docker setup for Symfony applications",
+    "type": "library",
+    "license": "OSL 3.0",
+    "authors": [
+        {
+            "name": "Neil",
+            "email": "neil@skywire.co.uk"
+        }
+    ],
+    "require": {
+        "skywire/file-copy-plugin": "^1.1"
+    },
+    "extra": {
+        "copy-file": {
+            "vendor/skywire/symfony-docker/skywire-docker": "skywire-docker",
+            "vendor/skywire/symfony-docker/docker-compose.yml": "docker-compose.yml",
+            "vendor/skywire/symfony-docker/docker-compose.override.yml": "docker-compose.override.yml!",
+            "vendor/skywire/symfony-docker/.env.docker.dist": ".env.docker.dist",
+            "vendor/skywire/symfony-docker/bin": "bin"
+        }
+    }
+}

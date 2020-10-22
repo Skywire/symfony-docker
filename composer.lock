@@ -1,0 +1,103 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e3e0bc6123fd961e3da2bef3837b3695",
+    "packages": [
+        {
+            "name": "skywire/composer-copy-file",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Skywire/CopyFile.git",
+                "reference": "2753a49c53b0e2bb625af87149822bd81d220c50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Skywire/CopyFile/zipball/2753a49c53b0e2bb625af87149822bd81d220c50",
+                "reference": "2753a49c53b0e2bb625af87149822bd81d220c50",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "mikey179/vfsstream": "~1",
+                "php-mock/php-mock-phpunit": "~1",
+                "phpunit/phpunit": "5.7.27",
+                "symfony/filesystem": "~2.7",
+                "symfony/finder": "~2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SlowProg\\CopyFile\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrey Tyshev",
+                    "email": "slowprog@gmail.com"
+                },
+                {
+                    "name": "Skywire Tech Team",
+                    "email": "tech@skywire.co.uk"
+                }
+            ],
+            "description": "Composer script copying your files after install",
+            "homepage": "https://github.com/SlowProg/composer-copy-file",
+            "keywords": [
+                "copy file"
+            ],
+            "time": "2020-01-08T12:36:11+00:00"
+        },
+        {
+            "name": "skywire/file-copy-plugin",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Skywire/composer-plugin-file-copy.git",
+                "reference": "d274e8cc7bd952e918e7ef931f65b9512bb54438"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Skywire/composer-plugin-file-copy/zipball/d274e8cc7bd952e918e7ef931f65b9512bb54438",
+                "reference": "d274e8cc7bd952e918e7ef931f65b9512bb54438",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1",
+                "php": ">=7.0",
+                "skywire/composer-copy-file": "^0.4.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Skywire\\FileCopyPlugin\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Skywire\\FileCopyPlugin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "A plugin to allow for dependencies to copy files into the project on install / update",
+            "time": "2020-10-22T08:16:49+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
