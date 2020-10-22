@@ -2,7 +2,7 @@
     "name": "skywire/symfony-docker",
     "description": "A simple docker setup for Symfony applications",
     "type": "library",
-    "license": "OSL 3.0",
+    "license": "OSL-3.0",
     "authors": [
         {
             "name": "Neil",
